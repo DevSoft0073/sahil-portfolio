@@ -16,7 +16,7 @@ const personalInfo = {
     linkedin: "https://linkedin.com/in/sahil-dhiman-84267120b",
     github: "https://github.com/sahildhiman96", // User should update with actual GitHub
     twitter: "#", // User can update
-    resumeLink: "/sahil_dhiman_cv.pdf" // Assuming CV will be named this and in public folder
+    resumeLink: "/sahilCV.pdf" // Assuming CV will be named this and in public folder
 };
 
 const heroData = {
@@ -247,9 +247,9 @@ const Navbar = () => {
                 {item}
               </Button>
             ))}
-            <Button variant="outlined" sx={{ marginLeft: '16px' }} href={personalInfo.resumeLink} target="_blank" startIcon={<Download />}>
-              Resume
-            </Button>
+            {/* <Button variant="outlined" sx={{ marginLeft: '16px' }} href={personalInfo.resumeLink} target="_blank" startIcon={<Download />}>
+              CV
+            </Button> */}
           </Box>
           <IconButton
             color="inherit"
@@ -269,11 +269,11 @@ const Navbar = () => {
               {item}
             </Button>
           ))}
-          <Box sx={{ p: 2 }}>
+          {/* <Box sx={{ p: 2 }}>
             <Button fullWidth variant="outlined" href={personalInfo.resumeLink} target="_blank" startIcon={<Download />}>
-              Resume
+              CV
             </Button>
-          </Box>
+          </Box> */}
         </Paper>
       )}
     </AppBar>
