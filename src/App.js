@@ -5,6 +5,8 @@ import {
     Menu as MenuIcon, Code, Brush, Storage, Cloud, Mail, GitHub, LinkedIn, Twitter, ArrowUpward, Send, Download,
     PhoneIphone, Api, DeveloperMode, AccountTree, Speed, Palette, Build, Storefront, Email // Added Storefront & Email icons
 } from '@mui/icons-material';
+import sahilImage from "./myImage.png"; // Adjust path as needed
+
 
 // CV Data: Sahil Dhiman
 const personalInfo = {
@@ -374,7 +376,7 @@ const About = () => (
         <Grid item xs={12} md={5} sx={{ textAlign: 'center' }}>
            <Avatar 
             alt={personalInfo.name + " - Profile"} 
-            src={`https://raw.githubusercontent.com/DevSoft0073/sahil-portfolio/refs/heads/main/FullSizeRender.png`} 
+            src={sahilImage} 
             sx={{ 
                 width: {xs: 200, md: 300}, 
                 height: {xs:200, md:300}, 
@@ -490,7 +492,7 @@ const Projects = () => (
                 >
                   App Store
                 </Button>
-                <Button 
+                {/* <Button 
                     size="small" 
                     variant="outlined" 
                     href={project.sourceLink} 
@@ -500,7 +502,7 @@ const Projects = () => (
                     startIcon={<Code />}
                 >
                   Source
-                </Button>
+                </Button> */}
               </CardActions>
             </Card>
           </Grid>
